@@ -31,14 +31,14 @@ FROM observations;
 -- Aplica una condición con WHERE.;
 SELECT COUNT(*) AS total_observations
 FROM observations
-WHERE region_id == 2
+WHERE region_id = 2;
 
 -- MISSION 5
 -- ¿Cuántas observaciones se registraron el día 1998-08-08?
 -- Filtra por fecha exacta usando igualdad.;
 SELECT COUNT(*) AS total_observations
 FROM observations
-WHERE observation_date == "1998-08-08";
+WHERE observation_date = '1998-08-08';
 
 -- LEVEL 2 --
 
